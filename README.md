@@ -1,10 +1,16 @@
 # SkwnFrontendDev--02 – ANIATUN NIKMAH
 
-Proyek frontend **Dashboard Finance** yang dibangun menggunakan **HTML, CSS, dan jQuery**, dengan data yang diambil dari **API finance terbuka** untuk menampilkan statistik, card saldo, transaksi, grafik, dan elemen dashboard lainnya. Proyek ini di-hosting melalui GitHub Pages:
+Proyek frontend **Dashboard Finance** yang dibangun menggunakan **HTML, CSS, dan jQuery**, dengan data yang diambil dari **API finance terbuka** untuk menampilkan statistik, card saldo, transaksi, grafik, dan elemen dashboard lainnya. Proyek ini di‑hosting melalui GitHub Pages:
 
 ➡️ [https://anii71128.github.io/SkwnFrontendDev--02---ANIATUN-NIKMAH-/](https://anii71128.github.io/SkwnFrontendDev--02---ANIATUN-NIKMAH-/)
 
 ---
+
+## 📄 Dokumen Soal Tes
+
+Silakan lihat dokumen soal tes pada link berikut:
+
+➡️ (https://docs.google.com/document/d/1PzpOaKJDQv4dmTbr45HJJK0EvjL9xEAG35U7QoRB2XE/edit?tab=t.0)
 
 ## 📝 Deskripsi Proyek
 
@@ -109,7 +115,7 @@ Data tersebut dapat digunakan untuk:
 
 Dashboard ini mencakup fitur berikut:
 
-### ✔ Memuat data finance dari API real-time
+### ✔ Memuat data finance dari API real‑time
 
 * mengambil kurs / indikator ekonomi
 * menampilkan pada card informasi
