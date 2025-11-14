@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.mobile-container {
+  width: 100%;
+  max-width: 430px;
+  margin: auto;
+  background: #f6f8fc;
+  padding-bottom: 40px;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #4cb2ff, #45d4d4);
+  padding: 40px 22px 30px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  color: white;
+}
+
+.back-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.icon-sm {
+  width: 20px;
+}
+
+.icon-sm.right {
+  margin-left: auto;
+}
+
+.balance {
+  margin-top: 25px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.date {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.stats-header {
+  display: flex;
+  justify-content: space-between; /* kiri - kanan */
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 10px;
+}
+
+.stats-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #555;
+}
+
+.see-all {
+  font-size: 14px;
+  color: #7b7b7b;
+  font-weight: 500;
+}
+
+
+.stats-wrapper {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.stats-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* HISTORY */
+.history-section {
+  background: #f6f8fc;
+  padding: 15px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #7b7b7b;
+  font-size: 14px;
+}
+
+.icon-xs {
+  width: 14px;
+}
+
+/* CARDS */
+/* CARDS TANPA WARNA SAMPING */
+.history-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeInUp 0.35s ease;
+  border: none;       /* ← PENTING: Hapus border kiri */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-circle {
+  width: 36px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 14px;
+}
+
+.blue-text { color: #4d8aff; }
+.red-text  { color: #ff6464; }
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #777;
+}
+
+.right {
+  text-align: right;
+  font-size: 12px;
+}
+
+.time {
+  margin-top: 2px;
+}
+
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #f5f5f5; /* default */
+  object-fit: contain;
+}
+
+/* warna spesifik berdasarkan card */
+.history-card.blue .icon-circle {
+  background: #e8f1ff; /* biru muda */
+}
+
+.history-card.red .icon-circle {
+  background: #ffe7ec; /* merah muda */
+}
+
+
+/* ANIMATION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

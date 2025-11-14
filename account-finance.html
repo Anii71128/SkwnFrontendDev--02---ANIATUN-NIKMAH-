@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance App UI</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="finance.css" />
+</head>
+<body>
+<div class="mobile-container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="back-row">
+      <img src="assets/back.png" class="icon-sm" />
+      <span>Account Finance</span>
+      <img src="assets/dots.png" class="icon-sm right"/>
+    </div>
+
+    <h2 class="balance">Rp. 25.550.000,-</h2>
+    <p class="date">12 June 2022</p>
+  </header>
+
+ <section class="stats-section">
+  <div class="stats-header">
+    <h3>Statistics</h3>
+    <div class="see-all">See All</div>
+</div>
+
+
+  <div class="stats-wrapper">
+  <img src="assets/statis.png" class="stats-img" />
+</div>
+
+</section>
+
+
+
+  <section class="history-section">
+  <div class="history-header">
+    <h3>History</h3>
+    <div class="category">
+      Category <img src="assets/down.png" class="icon-xs">
+    </div>
+  </div>
+
+  <div id="history-list"></div>
+</section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="finance.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

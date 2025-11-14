@@ -1,0 +1,302 @@
+/* reset */
+.main-content {
+  padding-bottom: 110px; /* agar content tidak ketimpa tombol */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f4f7ff;
+}
+
+/* layout layar */
+.screen {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  padding: 22px;
+  background: #fff;
+  border-radius: 25px;
+}
+
+/* ========================= HEADER ========================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.small-text {
+  font-size: 15px;
+  color: #a0a3b0;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ========================= VISA CARD ========================= */
+
+/* container scroll */
+.visa-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 2px;
+  scroll-snap-type: x mandatory;
+}
+
+.visa-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* kartu utama */
+.visa-card {
+  min-width: 330px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.visa-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* biar GAK ketarik */
+  display: block;
+}
+
+/* kartu kecil di belakang */
+.visa-card.small {
+  min-width: 260px; /* sedikit lebih kecil */
+  height: 160px; /* proporsional */
+  border-radius: 18px;
+  opacity: 0.55; /* efek jauh */
+  transform: translateY(20px); /* sedikit turun biar tampak belakang */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================= SERVICES ========================= */
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 15px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  text-align: center;
+}
+
+.service-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: rgba(135, 159, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.service-icon img {
+  width: 40px;
+}
+
+.service p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* ========================= ACTIVITY ========================= */
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 22px 0 14px;
+}
+
+.activity-header h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.activity-header a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7b89f7;
+}
+
+/* LIST */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ====== CARD ====== */
+.activity-item {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* iOS Shadow */
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+/* ====== LEFT SIDE ====== */
+.activity-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Bulat icon */
+.activity-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-icon img {
+  width: 24px;
+}
+
+/* Soft blue = deposit */
+.activity-icon.blue {
+  background: rgba(55, 125, 255, 0.15);
+}
+
+/* Soft red = withdraw */
+.activity-icon.red {
+  background: rgba(255, 70, 90, 0.15);
+}
+
+/* ====== LEFT TEXT ====== */
+.activity-info h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1b1b1b;
+  margin-bottom: 2px;
+}
+
+/* Amount text */
+.amount-blue {
+  color: #2f6bff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.amount-red {
+  color: #ff3b3b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Location */
+.activity-info .location {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #7a7a7a;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.location img {
+  width: 13px;
+  opacity: 0.85;
+}
+
+/* ====== RIGHT SIDE ====== */
+.activity-right {
+  text-align: right;
+}
+
+.activity-right .date {
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+.activity-right .time {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #868686;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 92%;
+  max-width: 430px;
+
+  background: #fff !important; 
+  border-radius: 26px;
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+
+  z-index: 9999;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-icon {
+  width: 26px;
+  height: 26px;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.nav-item.active .nav-icon {
+  opacity: 1;
+  transform: scale(1.12);
+}
+
+.app-page {
+  max-width: 430px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  background: transparent;
+}
